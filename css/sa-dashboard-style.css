@@ -2778,7 +2778,7 @@ right .d-drop-btn span {
 
 .print-save-btns {
     display: inline-block;
-    margin-left: 850px;
+    margin-left: 720px;
     margin-top: -200px;
 }
 
@@ -4879,7 +4879,7 @@ right .d-drop-btn span {
     color: #16215B;
     resize: none;
     overflow-y: scroll;
-    background-color: #DDDDDD;
+    background-color: white;
     border: none;
     border-radius: 5px;    
 }
@@ -4931,7 +4931,7 @@ right .d-drop-btn span {
     color: #16215B;
     resize: none;
     overflow-y: scroll;
-    background-color: #DDDDDD;
+    background-color: white;
     border: none;
     border-radius: 5px;    
 }
