@@ -933,10 +933,11 @@ right .d-drop-btn span {
 
 .sum-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 2rem;
-    margin-left: 25rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .sum-card-title h3 {
@@ -1073,7 +1074,7 @@ right .d-drop-btn span {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-top: 1rem;
     margin-bottom: 50px;
@@ -1311,6 +1312,107 @@ right .d-drop-btn span {
     margin-left: 20px;
     list-style-type: circle;
 }
+
+/* Dashboard Project Style */
+
+.project-sum h3 {
+    font-size: 1rem;
+    color: #7F8487;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.project-sum {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.dsh {
+    background-color: #fff;
+    border-radius: 5px;    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.dsh::-webkit-scrollbar{
+    display: none;
+}
+
+.dsh-projects {
+    margin-top: 10px;  
+    margin-left: 10px;  
+    margin-right: 10px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 100% auto;
+}
+
+.dsh-body {
+    padding: 30px;
+}
+
+.dsh-body table td label {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.dsh-body table td .stat-appr {
+    color: #A8E890;
+}
+
+.dsh-body table td .stat-dec {
+    color: #EC7272;
+}
+
+.dsh-body table td .stat-pen {
+    color: #39B5E0;
+}
+
+.progress-bar {
+  width: 450px;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 20px 0;
+  margin-right: -250px;
+}
+
+.progress-complete {
+  width: 100%;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-half {
+  width: 50%;
+  height: 100%;
+  background-color: #FFA500;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-halfhalf {
+  width: 75%;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-nothalf {
+  width: 25%;
+  height: 100%;
+  background-color: #FF5252;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
 
 /************************** END *************************/
 /***************** 05 - INVENTORY STYLES ****************/
@@ -1594,7 +1696,6 @@ right .d-drop-btn span {
     background-color: #16215B;
 }
 
-
 .inventory-add-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -1638,7 +1739,6 @@ right .d-drop-btn span {
     background-color: #16215B;
     cursor: pointer;
 }
-
 
 .inventory-form-container .inventory-form-header::before {
     content: "";
@@ -2607,6 +2707,9 @@ right .d-drop-btn span {
     color: #000;
     font-size: .9rem;    
 }
+
+/* Dash Project Style */
+
 
 .print-container {
 	padding-left: 50px;
@@ -4698,6 +4801,33 @@ right .d-drop-btn span {
     box-shadow: 0 8px 6px -6px black;; 
 }
 
+.tbl-proj {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tbl-proj th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.proj-container .prog-bar {    
+
+background-color: #ECECEC;    
+border: 1px solid #aaa;    
+width: 500px;    
+height: 20px;
+
+} 
+
+.proj-container .prog-bar .prog-bar-per {    
+
+width: 25%;    
+background-color: #16215B;    
+height: 20px;
+}
+
 .proj-container .title-container h2 {
     font-size: 15px;
     margin-top: 20px;
@@ -5294,6 +5424,10 @@ right .d-drop-btn span {
     .form-container form button {
         width: 150px;
     }
+    .progress-bar {
+        margin-right: -250px;
+         width: 250px;
+    }
 }
 
 @media all and (max-width: 900px) {
@@ -5497,6 +5631,11 @@ right .d-drop-btn span {
     .sidebar .user-wrapper {
         margin-top: -5px;
     }    
+
+    .progress-bar {
+        margin-right: -100px;
+         width: 250px;
+    }
     /* END */
 
     /* SEARCH AND DROP DOWN RESPONSIVE */
@@ -5554,15 +5693,20 @@ right .d-drop-btn span {
         margin: 0;
     }
 
+    .inventory-form-container{
+        width: 500px;
+    }
+
     .inventory-form-container .inventory-form-header {
         font-size: 15px;
     }
 
     .inventory-form-container form {
-        width: 400px;
+        width: 200px;
         margin-top: 10px;
         margin-left: 30px;
     }
+
 
     .inventory-form-container form .fields .input-field {
         width: calc(100% / 1 - 15px);
@@ -5622,6 +5766,10 @@ right .d-drop-btn span {
     }
 
     .purchase-add-container {
+        width: 100px;
+    }
+
+    .inventory-form-container{
         width: 100px;
     }
 
@@ -5700,6 +5848,7 @@ right .d-drop-btn span {
     .form-container form button, .btnText {
         width: 150px;
     }
+
     /* END */
 
 }
@@ -5741,6 +5890,10 @@ right .d-drop-btn span {
         align-items: center;
         height: 200px;
         max-width: 50%;
+    }
+
+    .progress-bar {
+        margin-right: 0;
     }
 
     /* END */
