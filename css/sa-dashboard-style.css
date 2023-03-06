@@ -5844,23 +5844,7 @@ right .d-drop-btn span {
         min-width: calc(90vh - 70px);
     }
 
-    .cards {
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    .recent-grid {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .inventory-grid{
-        grid-template-columns: 100%; 
-    }
-
-    .inventory-grid .current-card {
-        margin-left: 250px;
-        align-items: center;
-        max-width: 200px;
-    }
+    
 
     .sidebar {
         left: -100% !important;
@@ -5969,6 +5953,43 @@ right .d-drop-btn span {
         margin-top: 20px;
     }
     
+    /* DASHBOARD STYLE RESPONSIVE max-width: 1200px;*/
+
+    .cards {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .recent-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .inventory-grid{
+        grid-template-columns: 100%; 
+    }
+
+    .inventory-grid .current-card {
+        margin-left: 250px;
+        align-items: center;
+        max-width: 200px;
+    }
+
+    .progress-bar {
+        margin-right: 0;
+    }
+
+    .project-sum-btns {
+        margin-top: -60px;
+        margin-bottom: 80px;
+    }
+
+    .project-sum-btns .drp-wrapper {
+        margin-right: 10px;
+    }
+    
+
+
+    /* END */
+
 }
 
 @media all and (max-width: 1199px) {
@@ -6265,9 +6286,9 @@ right .d-drop-btn span {
     /* END */
 
 
-    /* DASHBOARD STYLE RESPONSIVE */
+    /* DASHBOARD STYLE RESPONSIVE max-width: 768px;*/
     .cards {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 
     .recent-grid {
@@ -6292,9 +6313,26 @@ right .d-drop-btn span {
         margin-top: -5px;
     }    
 
+    
+
     .progress-bar {
-        margin-right: -100px;
-         width: 250px;
+        margin-right: 0;
+    }
+
+    .project-sum-btns {
+        margin-top: -60px;
+        margin-bottom: 70px;
+    }
+
+    .project-sum-btns .drp-wrapper {
+        margin-right: 20px;
+    }
+    
+    .project-sum-btns select {
+        width: 80px;
+        height: 30px;
+        font-size: .9rem;
+
     }
     /* END */
 
@@ -6314,9 +6352,11 @@ right .d-drop-btn span {
     .upper-section select {
         font-size: .9rem;
     }
+
+    
     /* END */
     
-    /* INVENTORY STYLE RESPONSIVE */
+    /* INVENTORY STYLE RESPONSIVE max-width: 768px;*/
     .inventory-projects {
         margin: 0;
         padding: 0;
@@ -6382,7 +6422,7 @@ right .d-drop-btn span {
     }    
     /* END */
 
-    /* PURCHASE REQUST STYLE RESPONSIVE */
+    /* PURCHASE REQUST STYLE RESPONSIVE max-width: 768px;*/
 
     .purchase-projects {
         margin: 0;
@@ -6435,19 +6475,19 @@ right .d-drop-btn span {
 
     /* END */
 
-        /* DEPLOYMENT REQUST STYLE RESPONSIVE */
+    /* DEPLOYMENT REQUST STYLE RESPONSIVE max-width: 768px;*/
 
     /* END */
 
-    /* SUPPLY REQUST STYLE RESPONSIVE */
+    /* SUPPLY REQUST STYLE RESPONSIVE max-width: 768px;*/
 
     /* END */
 
-    /* PROJECTS STYLE RESPONSIVE */
+    /* PROJECTS STYLE RESPONSIVE max-width: 768px;*/
 
     /* END */
 
-    /* USERS STYLE RESPONSIVE */
+    /* USERS STYLE RESPONSIVE max-width: 768px;*/
     .user-projects {
         margin: 0;
         padding: 0;
@@ -6523,7 +6563,7 @@ right .d-drop-btn span {
     header h3 span {
         display: none;
     }
-    /* DASHBOARD STYLE */
+    /* DASHBOARD STYLE max-width: 480px;*/
 
     .sum-chart-card {
         padding-left: 0;
@@ -6554,6 +6594,22 @@ right .d-drop-btn span {
 
     .progress-bar {
         margin-right: 0;
+    }
+
+    .project-sum-btns {
+        margin-top: -60px;
+        margin-bottom: 70px;
+    }
+
+    .project-sum-btns .drp-wrapper {
+        margin-right: 20px;
+    }
+    
+    .project-sum-btns select {
+        width: 80px;
+        height: 30px;
+        font-size: .9rem;
+
     }
 
     /* END */
