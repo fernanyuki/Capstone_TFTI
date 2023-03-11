@@ -9,17 +9,19 @@ const barchart = new Chart(ctx, {
         datasets: [{
             label: 'All Item Quantity',
             data: [500, 420, 881, 100, 80, 700],
+            
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
+
                 if (value > 500) {
-                    return '#8fce00';
+                    return '#09AF10';
                 }
                 else if (value > 100 ) {
-                    return '#e69138';
+                    return '#FF932F';
                 }
 
                 else {
-                    return '#C64756';
+                    return '#FF0000';
                 }
             }
             ,
@@ -34,14 +36,14 @@ const barchart = new Chart(ctx, {
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
                 if (value > 500) {
-                    return '#8fce00';
+                    return '#09AF10';
                 }
                 else if (value > 100 ) {
-                    return '#e69138';
+                    return '#FF932F';
                 }
 
                 else {
-                    return '#C64756';
+                    return '#FF0000';
                 }
             },
             borderWidth: 1,
@@ -55,14 +57,14 @@ const barchart = new Chart(ctx, {
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
                 if (value > 500) {
-                    return '#8fce00';
+                    return '#09AF10';
                 }
                 else if (value > 100 ) {
-                    return '#e69138';
+                    return '#FF932F';
                 }
 
                 else {
-                    return '#C64756';
+                    return '#FF0000';
                 }
             },
 

@@ -9,7 +9,7 @@ const barcharthori = new Chart(ctx3, {
             label: 'Item Quantity',
             data: [881, 700, 500, 420, 350, 100],
             backgroundColor: [
-                '#256D85'
+                '#09AF10'
                 
             ],
             borderColor: [
