@@ -1037,6 +1037,29 @@ right .d-drop-btn span {
 /******************************* END ********************************/
 /********************** 04 - DASHBOARD STYLES ***********************/
 
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="month"] {
+  width: 180px;
+  height: 30px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+/* TEST */
+
+
+
+
+/* END */  
+
 .summary {
     margin-bottom: 80px;
     display: block; 
@@ -1297,6 +1320,8 @@ right .d-drop-btn span {
     color: #333;
     border-radius: 5px;
     border: 1px solid #aaa;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 
@@ -1446,7 +1471,7 @@ right .d-drop-btn span {
     overflow: hidden;
     display: grid;
     grid-template-columns: 90% 10%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .project-sum h3 {
@@ -1458,8 +1483,9 @@ right .d-drop-btn span {
 
 .project-sum-btns {
     display: block;
-    margin-top: -50px;
+    margin-top: -10px;
     margin-bottom: 60px;
+    margin-right: -10px;
 }
 
 .project-sum-btns .drp-wrapper {
@@ -1467,6 +1493,7 @@ right .d-drop-btn span {
     justify-content: right;
     position: absolute;
     right: 2%;
+    
 }
 
 .project-sum-btns button {

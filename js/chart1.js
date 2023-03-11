@@ -12,10 +12,10 @@ const barchart = new Chart(ctx, {
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
                 if (value > 500) {
-                    return '#3C84AB';
+                    return '#8fce00';
                 }
                 else if (value > 100 ) {
-                    return '#FAD586';
+                    return '#e69138';
                 }
 
                 else {
@@ -34,10 +34,10 @@ const barchart = new Chart(ctx, {
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
                 if (value > 500) {
-                    return '#3C84AB';
+                    return '#8fce00';
                 }
                 else if (value > 100 ) {
-                    return '#FAD586';
+                    return '#e69138';
                 }
 
                 else {
@@ -55,10 +55,10 @@ const barchart = new Chart(ctx, {
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
                 if (value > 500) {
-                    return '#3C84AB';
+                    return '#8fce00';
                 }
                 else if (value > 100 ) {
-                    return '#FAD586';
+                    return '#e69138';
                 }
 
                 else {

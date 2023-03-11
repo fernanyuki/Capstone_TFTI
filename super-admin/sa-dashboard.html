@@ -118,88 +118,14 @@
                     <span class="las la-bars"></span>
                 </label>
                 Overview
-                
             </h2>
+                 <right>
+                
+                    
 
-            <right>
-                <h4>View Summary In:</h4>
 
-                <button class="yr-drop-btn" onclick="yrFunction()">
-                    <a> 
-                        <span>Year</span> 
-                        <span class="las la-chevron-down"></span>
-                    </a>                    
-                </button>
-                <div class="yr-dropdown-content" id="yrDropdown">
-                    <a href="#">2019</a>
-                    <a href="#">2020</a>
-                    <a href="#">2021</a>
-                    <a href="#">2022</a>
-                    <a href="#">2023</a>
-                  </div>
 
-                <button class="m-drop-btn" onclick="mFunction()">
-                    <a> 
-                        <span>Month</span> 
-                        <span class="las la-chevron-down"></span>
-                    </a>                    
-                </button>
-                <div class="m-dropdown-content" id="mDropdown">
-                    <a href="#">January</a>
-                    <a href="#">February</a>
-                    <a href="#">March</a>
-                    <a href="#">April</a>
-                    <a href="#">May</a>
-                    <a href="#">June</a>
-                    <a href="#">July</a>
-                    <a href="#">August</a>
-                    <a href="#">September</a>
-                    <a href="#">October</a>
-                    <a href="#">November</a>
-                    <a href="#">December</a>
-                </div>
-
-                <button class="d-drop-btn" onclick="dFunction()">
-                    <a> 
-                        <span>Day</span> 
-                        <span class="las la-chevron-down"></span>
-                    </a>                    
-                </button>
-                <div class="d-dropdown-content" id="dDropdown">
-                    <a href="#">01</a>
-                    <a href="#">02</a>
-                    <a href="#">03</a>
-                    <a href="#">04</a>
-                    <a href="#">05</a>
-                    <a href="#">06</a>
-                    <a href="#">07</a>
-                    <a href="#">08</a>
-                    <a href="#">09</a>
-                    <a href="#">10</a>
-                    <a href="#">11</a>
-                    <a href="#">12</a>
-                    <a href="#">13</a>
-                    <a href="#">14</a>
-                    <a href="#">15</a>
-                    <a href="#">16</a>
-                    <a href="#">17</a>
-                    <a href="#">18</a>
-                    <a href="#">19</a>
-                    <a href="#">20</a>
-                    <a href="#">21</a>
-                    <a href="#">22</a>
-                    <a href="#">23</a>
-                    <a href="#">24</a>
-                    <a href="#">25</a>
-                    <a href="#">26</a>
-                    <a href="#">27</a>
-                    <a href="#">28</a>
-                    <a href="#">29</a>
-                    <a href="#">30</a>
-                    <a href="#">31</a>                    
-                  </div>
-
-            </right>
+                 </right>
         </header>
 
         <main>
@@ -279,6 +205,12 @@
                             <h3>Item Categories Summary</h3>
 
                             <select required>
+                                <option disabled selected>Item Class</option>
+                                <option>...</option>
+                                <option>..</option>
+                            </select>
+
+                            <select required>
                                 <option disabled selected>Item Category</option>
                                 <option>...</option>
                                 <option>..</option>
@@ -303,8 +235,18 @@
                     <div class="card">
                         <div class="card-header">
                             <h3>Most Requested Item</h3>
+
+                             <div class="project-sum-btns">
+                         <div class="drp-wrapper">
+                             <select required>
+                                <option disabled selected>Choose</option>
+                                <option>Clarisse Vasquez</option>
+                            </select>
                         </div>
-                    
+                    </div>
+
+                        </div>
+
                         <div class="chart-borders">
                             <div class="chart">
                                 <div class="scatter">
@@ -320,24 +262,25 @@
 
                 <div class="project-sum">
                     <h3>Project Summary</h3>
-                </div>
-                    <div class="project-sum-btns">
-                        <div class="drp-wrapper">
+                     <div class="project-sum-btns">
+                         <div class="drp-wrapper">
                            
-                            <select required>
-                                <option disabled selected>Status</option>
+                             <select required>
+                                <option disabled selected>Project Status</option>
                                 <option>On-going</option>
                                 <option>In-line</option>
                                 <option>Delayed</option>
-                            </select>
-                            <select required>
-                                <option disabled selected>Proj. Lead</option>
+                             </select>
+
+                             <select required>
+                                <option disabled selected>Project Lead</option>
                                 <option>Clarisse Vasquez</option>
                             </select>
                         </div>
-                        
                     </div>
-                
+                </div>
+                   
+                     
 
             <!-- Project Summary -->
 
@@ -345,9 +288,15 @@
                     <div class="dsh">
                         <div class="dsh-body">
                             <div class="table-responsive" style="overflow-x: auto;">
+
+               
+
                                 <table width="100%">
+
                                     <thead>
-                                        <tr>                                            
+
+                                        <tr>       
+
                                             <td>Project Name</td>
                                             <td>Project Lead</td>
                                             <td>Start Date</td>
@@ -508,6 +457,8 @@
                 }
               }
             } 
+
+            /* TEST CALENDAR */
 
     </script>
 
