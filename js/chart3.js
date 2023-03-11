@@ -29,6 +29,11 @@ const barcharthori = new Chart(ctx3, {
         }]
     },
     options: {
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
         indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,

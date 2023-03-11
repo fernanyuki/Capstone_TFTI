@@ -31,7 +31,7 @@ const barchart = new Chart(ctx, {
             hoverBorderColor: '#16215B',
         },
         {
-            label: 'Local Item Quantity',
+            label: '',
             data: [700, 20, 80, 600, 200, 200],
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
@@ -52,7 +52,7 @@ const barchart = new Chart(ctx, {
             hoverBorderColor: '#16215B',
         },
         {
-            label: 'Imported Item Quantity',
+            label: '',
             data: [700, 20, 80, 600, 200, 200],
             backgroundColor: function(context) {
                 var value = context.dataset.data[context.dataIndex];
@@ -76,9 +76,11 @@ const barchart = new Chart(ctx, {
     ]
     },    
     options: {
-        legendL: {
-            display: false
-        },
+        plugins: {
+            legend: {
+                display: false
+            }
+        },        
         responsive: true,
         maintainAspectRatio: false,
         aspectRatio: 4 / 3,
