@@ -1060,163 +1060,7 @@ input[type="month"] {
 
 /* END */  
 
-.summary {
-    margin-bottom: 80px;
-    display: block; 
-   
-}
 
-.summary-title {
-    font-size: 1.2rem;
-    color: #7F8487;
-    margin-bottom: 10px;
-}
-
-.sum-chart-card {       
-    width: 100%;
-    height: 200px;
-}
-
-.sum-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    margin-top: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-}
-
-.sum-card-title h3 {
-    font-size: 1rem;
-    color: #7F8487;
-    margin-bottom: 5px;
-    margin-top: 20px;
-}
-
-.sum-card-single {
-    display:block;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 1rem;
-    border-left: 4px solid #16215B;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
-.inv-circle-wrap {    
-    width: 150px;
-    height: 150px;
-    background: #f1f5f9;
-    border-radius: 50%;
-    border: 1px solid #cdcbd0;
-}
-
-.inv-circle-wrap .inv-circle .inv-mask,
-.inv-circle-wrap .inv-circle .inv {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    border-radius: 50%;
-}
-
-.inv-mask .inv {
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #1C82AD;
-}
-
-.inv-circle-wrap .inv-circle .inv-mask {
-    clip: rect(0px, 150px, 150px, 75px);
-}
-
-.inv-mask.inv-full,
-.inv-circle .inv {
-    animation: inv ease-in-out 1s;
-    transform: rotate(180deg);
-}
-
-@keyframes inv{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
-}
-
-.inv-circle-wrap .inv-inside-circle {
-    width: 122px;
-    height: 122px;
-    border-radius: 50%;
-    background: #fff;
-    line-height: 120px;
-    text-align: center;
-    margin-top: 14px;
-    margin-left: 14px;
-    color: #000;
-    position: absolute;
-    z-index: none;
-    font-weight: 700;
-    font-size: 2em;
-}
-
-
-
-
-.pur-circle-wrap {    
-    width: 150px;
-    height: 150px;
-    background: #f1f5f9;
-    border-radius: 50%;
-    border: 1px solid #cdcbd0;
-}
-
-.pur-circle-wrap .pur-circle .pur-mask,
-.pur-circle-wrap .pur-circle .pur {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    border-radius: 50%;
-}
-
-.pur-mask .pur {
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #CD0404;
-}
-
-.pur-circle-wrap .pur-circle .pur-mask {
-    clip: rect(0px, 150px, 150px, 75px);
-}
-
-.pur-mask.pur-full,
-.pur-circle .pur {
-    animation: inv ease-in-out 1s;
-    transform: rotate(45deg);
-}
-
-@keyframes pur{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-.pur-circle-wrap .pur-inside-circle {
-    width: 122px;
-    height: 122px;
-    border-radius: 50%;
-    background: #fff;
-    line-height: 120px;
-    text-align: center;
-    margin-top: 14px;
-    margin-left: 14px;
-    color: #000;
-    position: absolute;
-    z-index: none;
-    font-weight: 700;
-    font-size: 2em;
-}
 
 .cards {
     display: grid;
@@ -1310,6 +1154,71 @@ input[type="month"] {
     overflow: hidden;
 }
 
+.inventory-sum .inv-sum-header {
+    display: flex;
+}
+
+.inventory-sum .inv-sum-header h3 {
+    margin-left: 2%;
+}
+
+.legend-grp {
+    margin-left: 55%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 30px;
+    width: 350px;
+    background-color: #fff;
+    background-color: #fff;
+    border-radius: 2px; 
+    box-shadow: 4px 3px 3px #B2B2B2; 
+    display: inline-flex; 
+    
+}
+
+.legend-grp .legend-content {
+    margin-top: 5px;
+    margin-left: 4px;
+    display: flex;
+}
+
+.legend-grp .legend-content h3 {
+    font-size: 1rem;
+    color: #000; 
+}
+
+
+
+.legend-content .legend-content-1 {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #09AF10;    
+    border: 1px solid #000;
+    margin-left: 20px;
+}
+
+.legend-content .legend-content-1 label {
+    margin-left: 25px;
+    margin-top: 2px;
+    font-size: .9rem;
+}
+
+.legend-content .legend-content-2 {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #FF0000;
+    border: 1px solid #000;
+    margin-left: 100px;
+}
+
+.legend-content .legend-content-2 label {
+    margin-left: 25px;
+    margin-top: 2px;
+    font-size: .9rem;
+}
+
 .recent-grid .inventory-sum .card .card-header select{
     max-width: 100%;
     width: 180px;
@@ -1319,7 +1228,7 @@ input[type="month"] {
     font-weight: 400;
     color: #333;
     border-radius: 5px;
-    border: 1px solid #aaa;
+    border: 1px solid #000;
     display: inline-block;
     margin-right: 10px;
 }

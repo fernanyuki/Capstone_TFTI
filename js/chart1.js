@@ -7,7 +7,7 @@ const barchart = new Chart(ctx, {
         
         labels: ['Pipe', 'Fire Extinguisher', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: 'All Item Quantity',
+            label: '',
             data: [500, 420, 881, 100, 80, 700],
             
             backgroundColor: function(context) {
@@ -76,6 +76,9 @@ const barchart = new Chart(ctx, {
     ]
     },    
     options: {
+        legendL: {
+            display: false
+        },
         responsive: true,
         maintainAspectRatio: false,
         aspectRatio: 4 / 3,
