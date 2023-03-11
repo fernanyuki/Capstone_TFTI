@@ -1060,7 +1060,26 @@ input[type="month"] {
 
 /* END */  
 
+right .inv-sum-date {
+    
+}
 
+right .inv-sum-date label {
+    margin: 10px;
+    color: #fff;
+}
+
+right .inv-sum-date input {
+    font-size: .9rem;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+right .inv-sum-date input::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+}
 
 .cards {
     display: grid;
@@ -1068,10 +1087,7 @@ input[type="month"] {
     grid-gap: 2rem;
     margin-top: 1rem;
     margin-bottom: 50px;
-    background-color: #fff;
-    border-left: 4px solid #16215B;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
 }
 
 .cards .card-title:hover{
@@ -1086,6 +1102,10 @@ input[type="month"] {
 
 .card-title {
     border-left: 2px solid #f0f0f0;
+    background-color: #fff;
+    border-left: 4px solid #16215B;
+    border-radius: 5px;
+    box-shadow: 4px 3px 3px #B2B2B2; 
 }
 
 .card-title h3 {
@@ -1162,64 +1182,24 @@ input[type="month"] {
     margin-left: 2%;
 }
 
-.legend-grp {
-    margin-left: 55%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    height: 30px;
-    width: 350px;
-    background-color: #fff;
-    background-color: #fff;
-    border-radius: 2px; 
-    box-shadow: 4px 3px 3px #B2B2B2; 
-    display: inline-flex; 
-    
-}
 
-.legend-grp .legend-content {
+.inventory-sum .inv-sum-date {
     margin-top: 5px;
-    margin-left: 4px;
-    display: flex;
+    margin-bottom: 4%;
 }
 
-.legend-grp .legend-content h3 {
-    font-size: 1rem;
-    color: #000; 
-}
-
-
-
-.legend-content .legend-content-1 {
-    display: flex;
-    height: 20px;
-    width: 20px;
-    background-color: #09AF10;    
-    border: 1px solid #000;
-    margin-left: 20px;
-}
-
-.legend-content .legend-content-1 label {
-    margin-left: 25px;
-    margin-top: 2px;
+.inventory-sum .inv-sum-date label {
+    font-weight: 800;
     font-size: .9rem;
 }
 
-.legend-content .legend-content-2 {
-    display: flex;
-    height: 20px;
-    width: 20px;
-    background-color: #FF0000;
-    border: 1px solid #000;
-    margin-left: 100px;
+.inventory-sum .inv-sum-date input {
+    height: 30px;
+    width: 150px;
 }
 
-.legend-content .legend-content-2 label {
-    margin-left: 25px;
-    margin-top: 2px;
-    font-size: .9rem;
-}
 
-.recent-grid .inventory-sum .card .card-header select{
+.recent-grid .inventory-sum .card .card-header select {
     max-width: 100%;
     width: 180px;
     height: 30px;
@@ -1232,8 +1212,6 @@ input[type="month"] {
     display: inline-block;
     margin-right: 10px;
 }
-
-
 
 .recent-grid .inventory-sum .test{
     margin-left: -100px;
@@ -1269,6 +1247,7 @@ input[type="month"] {
     font-size: .8rem;
     padding: .5rem;
     border: 1px solid #B2B2B2;
+    width: 100px;
 }
 
 .card-headers button a {
@@ -1280,6 +1259,61 @@ input[type="month"] {
     color: #fff;
     background-color: #16215B;
     cursor: pointer;
+}
+
+
+.legend-grp {
+    margin-left: 55%;
+    margin-right: 2%;
+    height: 30px;
+    width: 350px;
+    background-color: #fff;
+    background-color: #fff;
+    border-radius: 2px; 
+    border: 1px solid #B2B2B2;
+    box-shadow: 4px 3px 3px #B2B2B2; 
+    display: inline-flex; 
+}
+
+.legend-grp .legend-content {
+    margin-top: 3px;
+    margin-left: 4px;
+    display: flex;
+}
+
+.legend-grp .legend-content h3 {
+    font-size: 1rem;
+    color: #000; 
+}
+
+.legend-content .legend-content-1 {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #09AF10;    
+    border: 1px solid #000;
+    margin-left: 20px;
+}
+
+.legend-content .legend-content-1 label {
+    margin-left: 25px;
+    margin-top: 1px;
+    font-size: .9rem;
+}
+
+.legend-content .legend-content-2 {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #FF0000;
+    border: 1px solid #000;
+    margin-left: 100px;
+}
+
+.legend-content .legend-content-2 label {
+    margin-left: 25px;
+    margin-top: 1px;
+    font-size: .9rem;
 }
 
 /* Card Header */
@@ -1301,27 +1335,8 @@ input[type="month"] {
     font-size: 1rem;
 }
 
-.card-header button {
-    background: #fff;
-    border-radius: 5px;
-    color: #000;
-    font-size: .8rem;
-    padding: .5rem 1rem;
-    border: 1px solid #B2B2B2;
-}
-
-
-.card-header button a {
-    display: inline-block;
-    justify-content: space-between;
-    color: inherit;
-    text-decoration: inherit;
-}
-
-.card-header button:hover {
-    color: #fff;
-    background-color: #16215B;
-    cursor: pointer;
+.card-header .fst-grp select {
+    margin-left: 45%;
 }
 
 .chart-border {
@@ -1370,6 +1385,30 @@ input[type="month"] {
     list-style-type: circle;
 }
 
+.card-headers .fst-legend-content {
+    display: flex;
+    margin-left: 10px;
+}
+
+.card-headers .fst-legend-content .fst-content-1 {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #FF932F;
+    border: 1px solid #000;
+}
+
+.card-headers .fst-legend-content label {
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.card-headers .fst-date {
+    color: #707070;
+}
+
+
+
 /* Dashboard Project Style */
 
 /* NEW UPDATE */
@@ -1390,46 +1429,22 @@ input[type="month"] {
     margin-left: 2%;
 }
 
-.project-sum-btns {
-    display: block;
-    margin-top: -10px;
-    margin-bottom: 60px;
-    margin-right: -10px;
-}
 
-.project-sum-btns .drp-wrapper {
+
+.dsh .drp-wrapper {
     display: flex;
-    justify-content: right;
-    position: absolute;
-    right: 2%;
-    
-}
-
-.project-sum-btns button {
-    width: 100px;
-    height: 40px;
-    margin-right: 5px;
     margin-top: 10px;
-    border-radius: 3px;
-    transition: all ease-in-out 0.2s;
-    cursor: pointer;
-    background-color: #fff;
-    border: 1px solid #B2B2B2;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-left: 73%;
+    margin-bottom: -20px;
 }
 
-.project-sum-btns button:hover {
-    color: #fff;
-    border: 1px solid var(--text-color-black);
-    background-color: #16215B;
-}
-
-.project-sum-btns select {    
+.dsh .drp-wrapper select {    
     height: 20px;
-    width: 120px;
+    width: 200px;
     text-align: left;
     height: 40px;
     font-size: .9rem;
+    font-weight: 600;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding: 2px;
     margin-right: 5px;
@@ -1439,7 +1454,7 @@ input[type="month"] {
     background-color: #fff;
     border-radius: 5px;    
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    max-height: 400px;
+    max-height: 800px;
     overflow: scroll;
 }
 
@@ -1458,6 +1473,10 @@ input[type="month"] {
 
 .dsh-body {
     padding: 30px;
+}
+
+.dsh-body table td {
+    width: 5px;
 }
 
 .dsh-body table td label {
@@ -1480,7 +1499,7 @@ input[type="month"] {
 
 
 .progress-bar {
-    width: 450px;
+    width: 250px;
     height: 20px;
     background-color: #f2f2f2;
     border-radius: 10px;
@@ -1519,6 +1538,81 @@ input[type="month"] {
     border-radius: 10px;
     transition: width 0.3s ease-in-out;
   }
+
+  
+.proj-legend-grp {
+    margin-top: 1.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 30px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 2px; 
+    border: 1px solid #B2B2B2;
+    box-shadow: 4px 3px 3px #B2B2B2; 
+    display: inline-flex; 
+    
+}
+
+.proj-legend-grp .proj-legend-content {
+    margin-top: 3px;
+    margin-left: 4px;
+    display: flex;
+}
+
+.proj-legend-grp .proj-legend-content h3 {
+    font-size: 1rem;
+    color: #000; 
+}
+
+
+
+.proj-legend-content .proj-legend-content-1 {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #09AF10;    
+    border: 1px solid #000;
+    margin-left: 20px;
+}
+
+.proj-legend-content .proj-legend-content-1 label {
+    margin-left: 25px;
+    margin-top: 2px;
+    font-size: .9rem;
+}
+
+.proj-legend-content .proj-legend-content-2 {
+    display: flex;
+    height: 20px;
+    width: 30px;
+    background-color: #FF0000;
+    border: 1px solid #000;
+    margin-left: 100px;
+}
+
+.proj-legend-content .proj-legend-content-2 label {
+    margin-left: 40px;
+    margin-top: 2px;
+    font-size: .9rem;
+}
+
+
+.proj-legend-content .proj-legend-content-3 {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #B1CAFA;
+    border: 1px solid #000;
+    margin-left: 100px;
+}
+
+.proj-legend-content .proj-legend-content-3 label {
+    margin-left: 25px;
+    margin-top: 2px;
+    font-size: .9rem;
+}
 
  /* END */
 

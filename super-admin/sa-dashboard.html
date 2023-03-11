@@ -10,6 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="../css/sa-dashboard-style.css">
+
+    <!-- DATE PLUGINS -->
+    <link rel="stylesheet" href="./dist/vanilla-datetimerange-picker.css" />
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="./dist/vanilla-datetimerange-picker.js"></script>
 </head>
 <body>
     
@@ -120,10 +125,17 @@
                 Overview
             </h2>
                  <right>
-                
-                    
 
+                    <div class="inv-sum-date">
+                        <div class="sum-date-con">
+                            <label></label>
+                            <input type="date">
 
+                            <label>-</label>
+                            <input type="date">
+                        </div>
+                        
+                    </div>
 
                  </right>
         </header>
@@ -137,7 +149,7 @@
                         <h3>Users</h3>
                         <div class="card-single">
                             <div class="card-container">
-                                <h3>Employee</h3>
+                                <h3>Users</h3>
                                     <div class="card-details">
                                         <label>15</label><span>Total Employees</span>
                                         <p></p>
@@ -149,7 +161,7 @@
                 </div>
                 <div class="card-title">
                     <a href="../super-admin/operations/requisition/sa-pur_requi.html">
-                        <h3>Requisition</h3>
+                        <h3>Purchase Request Entries</h3>
                         <div class="card-single">                        
                             <div class="card-container">
                                 <h3>Purchase Request</h3>
@@ -200,24 +212,7 @@
 
                 <div class="inventory-sum">
                     <div class="inv-sum-header">
-                        <h3>Inventories</h3>
-                        <div class="legend-grp">
-                            <div class="legend-content">
-                                <h3>Legend: </h3>
-                                <div class="legend-content-1">
-                                    <div class="legend-color">
-
-                                    </div>
-                                    <label> A.Average </label>
-                                </div>
-                                <div class="legend-content-2">
-                                    <div class="legend-color">
-
-                                    </div>
-                                    <label> Critical </label>
-                                </div>
-                            </div>                            
-                        </div>
+                        <h3>Inventories</h3>                        
                     </div>
                     
                     <div class="card">                        
@@ -227,14 +222,15 @@
                             <div class="cat-grp">
                                 <select required>
                                     <option disabled selected>Item Class</option>
-                                    <option>...</option>
-                                    <option>..</option>
+                                    <option>All</option>
+                                    <option>Local</option>
+                                    <option>Import</option>
                                 </select>
     
                                 <select required>
                                     <option disabled selected>Item Category</option>
-                                    <option>...</option>
-                                    <option>..</option>
+                                    <option>Fast Moving Item</option>
+                                    <option>Slow Moving Item</option>
                                 </select>
                             </div>                           
 
@@ -247,27 +243,55 @@
                         </div>
                         
                             <div class="card-headers">
-                                    <a href="../super-admin/operations/sa-inventory/sa-inventory.html"><button> See more <span class="las la-arrow-right"></span></button></a>                         
+                                    <a href="../super-admin/operations/sa-inventory/sa-inventory.html"><button> See more <span class="las la-arrow-right"></span></button></a>     
+
+                                    <div class="legend-grp">
+                                        <div class="legend-content">
+                                            <h3>Legend: </h3>
+                                            <div class="legend-content-1">
+                                                <div class="legend-color">
+            
+                                                </div>
+                                                <label> A.Average </label>
+                                            </div>
+                                            <div class="legend-content-2">
+                                                <div class="legend-color">
+            
+                                                </div>
+                                                <label> Critical </label>
+                                            </div>
+                                        </div>                            
+                                    </div>                    
                             </div>
+                            
                     </div>
                 </div>
             
                 <div class="inventory-sum" >
                     
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Most Requested Item</h3>
-
-                             <div class="project-sum-btns">
-                         <div class="drp-wrapper">
-                             <select required>
-                                <option disabled selected>Choose</option>
-                                <option>Clarisse Vasquez</option>
-                            </select>
-                        </div>
+                    <div class="inv-sum-header">
+                        <h3>&nbsp;</h3>                        
                     </div>
 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Fast Moving Item</h3>
+                            
+                            <div class="fst-grp">
+                                <select required>
+                                    <option disabled selected>Choose</option>
+                                    <option>...</option>
+                                    <option>..</option>
+                                </select>
+                            </div>
+
+                            
+
+                        <div class="project-sum-btns">
+                        
                         </div>
+
+                    </div>
 
                         <div class="chart-borders">
                             <div class="chart">
@@ -276,6 +300,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-headers">
+                            <div class="fst-legend-content">
+                                <div class="fst-content-1">
+
+                                </div>
+                                <label> Quantity </label>
+                            </div>
+
+                            <label class="fst-date">03/08/2023 - 03/08/2023</label>
+                        </div>
                     </div>    
                 </div>       
             </div>
@@ -283,23 +317,7 @@
             <br> 
 
                 <div class="project-sum">
-                    <h3>Project Summary</h3>
-                     <div class="project-sum-btns">
-                         <div class="drp-wrapper">
-                           
-                             <select required>
-                                <option disabled selected>Project Status</option>
-                                <option>On-going</option>
-                                <option>In-line</option>
-                                <option>Delayed</option>
-                             </select>
-
-                             <select required>
-                                <option disabled selected>Project Lead</option>
-                                <option>Clarisse Vasquez</option>
-                            </select>
-                        </div>
-                    </div>
+                    <h3>PROJECT SUMMARY</h3>
                 </div>
                    
                      
@@ -308,22 +326,29 @@
 
              <div class="dsh-projects">
                     <div class="dsh">
+                        <div class="drp-wrapper">
+                            <select required>
+                               <option disabled selected>Project Status</option>
+                               <option>On-going</option>
+                               <option>In-line</option>
+                               <option>Delayed</option>
+                            </select>
+
+                            <select required>
+                               <option disabled selected>Project Lead</option>
+                               <option>Clarisse Vasquez</option>
+                           </select>
+                       </div>
                         <div class="dsh-body">
                             <div class="table-responsive" style="overflow-x: auto;">
-
-               
-
                                 <table width="100%">
-
                                     <thead>
-
-                                        <tr>       
-
-                                            <td>Project Name</td>
-                                            <td>Project Lead</td>
-                                            <td>Start Date</td>
-                                            <td>Status</td>
-                                            <td>Tracker</td>
+                                        <tr>    
+                                            <td>PROJECT NAME</td>
+                                            <td>PROJECT LEAD</td>
+                                            <td>START DATE</td>
+                                            <td>STATUS</td>
+                                            <td>TRACKER</td>
                                         </tr>
                                     </thead>
                                     <tbody>                                        
@@ -384,7 +409,36 @@
                                 </table>
                             </div>
                         </div>
+
+                        <div class="proj-legend-grp">
+                            <div class="proj-legend-content">
+                                <h3>Legend: </h3>
+                                <div class="proj-legend-content-1">
+                                    <div class="legend-color">
+
+                                    </div>
+                                    <label> Ongoing </label>
+                                </div>
+                                <div class="proj-legend-content-2">
+                                    <div class="legend-color">
+
+                                    </div>
+                                    <label> Delayed </label>
+                                </div>
+
+                                <div class="proj-legend-content-3">
+                                    <div class="legend-color">
+
+                                    </div>
+                                    <label> Inline </label>
+                                </div>
+                            </div>                            
+                        </div>
+
                     </div>
+
+                    
+
                 </div>
             </div>
 
