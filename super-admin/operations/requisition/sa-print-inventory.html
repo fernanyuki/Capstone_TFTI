@@ -26,38 +26,38 @@
 <body>
     <div class="">
         <main>
-            <center>
+            <center>    
                 <div class="TestContainer">
                     <div class="Change_Table">
                         <div class="d-flex justify-content-center">
                             <img class="mb-4" src="../../../images/tfsti-logo-inventory.png"
-                                style="width: 30%; height: 110px;">
+                                style="width: 50%; height: 190px;">
                         </div>
-                        <table cellspacing="0" cellpadding="0">
+                        <!-- <table cellspacing="0" cellpadding="0">
                             <tr>
-                               <td colspan="4" class="text-center">Tool Inventory Sheet</td> 
+                               <td colspan="4" class="text-center font-weight-bold">Tool Inventory Sheet</td> 
                             </tr>
                             <tr>
-                                <td colspan="2">Job Title/MOP#:</td>
+                                <td colspan="2" class="font-weight-bold">Job Title/MOP#:</td>
                                 <td colspan="2">Date:</td>
                             </tr>  
                             <tr>
-                                <td colspan="4">Vendor Personnel Name: </td>
+                                <td colspan="4" class="font-weight-bold">Vendor Personnel Name: </td>
                             </tr>
                             <tr>
-                                <td colspan="4">Assigned Site Personnel: </td>
+                                <td colspan="4" class="font-weight-bold">Assigned Site Personnel: </td>
                             </tr>
                             <tr>
-                                <td colspan="4">Switchboard/Room: </td>
+                                <td colspan="4" class="font-weight-bold">Switchboard/Room: </td>
                             </tr>
                             <tr>
-                                <td colspan="4" class="text-center">Tools: </td>
+                                <td colspan="4" class="text-center font-weight-bold">Tools: </td>
                             </tr>
                             <tr>
-                                <td>Description of Tool or Equipment: </td>
-                                <td>Time In: </td>
-                                <td>Time Out: </td>
-                                <td>Initials: </td>
+                                <td class="font-weight-bold">Description of Tool or Equipment: </td>
+                                <td class="font-weight-bold">Time In: </td>
+                                <td class="font-weight-bold">Time Out: </td>
+                                <td class="font-weight-bold"    >Initials: </td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -204,7 +204,7 @@
                                 <td></td>
                             </tr>
 
-                        </table>
+                        </table> -->
                         <!-- <table width="900px" border="0" cellspacing="0" cellpadding="0">
                             <tr>
                                 <td align="center" colspan="3">check</td>
@@ -215,15 +215,52 @@
                                 <td align="center">check</td>
                             </tr>
                         </table> -->
+                        <br><br><br>
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td colspan="4" class="font-weight-bold">Code:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="font-weight-bold">Name:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="font-weight-bold">Category:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="font-weight-bold">Type:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="font-weight-bold">Size:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="font-weight-bold">Transaction<br>Date:</td>
+                                <td colspan="2" class="font-weight-bold"><br>Item Registry:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="font-weight-bold">Date Added:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="font-weight-bold"><br></td>
+                            </tr>
+
+                        </table>
                     </div>
                 </div>
-                <script>
+                <br><br><br><br>
+                <div class="mt-5 d-flex justify-content-end mr-3">
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-primary btn-lg buttons1 ml-2">EXPORT</button>
+                        <button type="button" class="btn btn-primary btn-lg buttons1 ml-2">PRINT</button>
+                        <button type="button" class="btn btn-outline-primary buttons2 ml-2">CANCEL</button>
+                    </div>
+
+                </div>
+                <!-- <script>
                     const d = new Date();
                     document.getElementById("demo").innerHTML = d.toDateString();
-                </script>
+                </script> -->
             </center>
         </main>
     </div>
 </body>
-
 </html>

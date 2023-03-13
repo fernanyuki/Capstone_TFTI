@@ -1,28 +1,32 @@
+
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid black;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid black;
 }
-
-.TestContainer .Change_Table .table-hero td{
+.TestContainer .Change_Table .table-hero td {
 	border: none;
 }
 
-.TestContainer .Change_Table table{
-	border: none;
+.Change_Table{
+	margin-top: 45px !important;
+}
+.TestContainer .Change_Table table {
+	/* border: none; */
 	background-color: white;
 }
 
-td, th {
-  border: 0px solid #dddddd;
-  text-align: left;
-  padding: 15px;
-  border: 1px solid black;
+td,
+th {
+	border: 0px solid #dddddd;
+	text-align: left;
+	padding: 15px;
+	border: 1px solid black;
 }
 
-.container{
+.container {
 	align-items: center;
 	justify-content: center;
 	background-color: white;
@@ -30,11 +34,11 @@ td, th {
 	padding: 10%;
 }
 
-.Change_Table{
-	border-style: solid;
+.Change_Table {
+	border: solid 1px;
 	border-color: black;
-	width: 80%;
-	height: 1000px;
+	width: 900px;
+	height: 1150px;
 	padding: 2%;
 	background-color: white;
 }
@@ -44,18 +48,34 @@ td, th {
 	height: 100px;
 } */
 
-th{
+th {
 	font-weight: 300;
 	font-size: 15px;
 }
 
-.table-hero td{
+.table-hero td {
 	font-weight: 600;
 	font-size: 30px;
 }
 
-.table-hero td p{
+.table-hero td p {
 	font-weight: 300;
 	font-size: 16px;
 	margin-right: 70px;
+}
+
+.buttons1 {
+	background-color: rgb(22, 33, 91) !important;
+	width: 175px !important;
+}
+
+.buttons2 {
+	width: 175px !important;
+	height: 47px !important;
+	border: 1px solid rgb(22, 33, 91) !important;
+	color: rgb(22, 33, 91) !important;
+}
+.buttons2:hover{
+	background-color: rgb(22, 33, 91) !important;
+	color: white !important;
 }
